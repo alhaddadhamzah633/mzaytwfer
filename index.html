@@ -7,9 +7,15 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+         }
+         .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
          }
          h1 {
             margin-top: 50px;
@@ -41,7 +47,7 @@
       </style>
    </head>
    <body>
-      <div>
+      <div class="column">
          <img class="logo" src="background.jpeg" alt="Logo">
          <h1>توفير سنتر</h1>
          <a href="https://www.facebook.com/profile.php?id=61550070827650">
@@ -61,7 +67,7 @@
             <span>عنوان على الخريطة</span>
          </a>
       </div>
-      <div>
+      <div class="column">
          <img class="logo" src="background2.jpeg" alt="Logo">
          <h1>مزايا التخفيضات</h1>
          <a href="https://maps.app.goo.gl/s6s354TRvSJ5g6xE6">
